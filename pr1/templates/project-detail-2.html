@@ -1,0 +1,70 @@
+{% extends 'base.html' %} {% block content %}
+<!-- PROJECT DETAIL -->
+<section class="project-detail section-padding-half">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center"
+        data-aos="fade-up"
+      >
+        <h4>Back</h4>
+
+        <h1>Preparing the server</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="col-lg-9 mx-auto col-12" data-aos="fade-up">
+  <div class="client-info mt-lg-5 py-lg-5">
+    <h3>
+      From classes, I had my server set up already, so I used it, but I'm gonna
+      run through steps here.
+    </h3>
+    <h3>
+      I used
+      <a href="https://flask.palletsprojects.com/en/2.0.x/"> Flask</a> framework
+      - it is written in python, so obviously my back is python. I downloaded
+      the Flask and imported to to my project, set it up and wrote a simple
+      server.
+    </h3>
+  </div>
+  <pre
+    class="python"
+    style="font-family: monospace"
+  >------------------------------------------------------------
+    <span style="color: #ff7700;font-weight:bold;">from</span> flask <span style="color: #ff7700;font-weight:bold;">import</span> Flask
+    <span style="color: #ff7700;font-weight:bold;">from</span> flask <span style="color: #ff7700;font-weight:bold;">import</span> render_template
+    &nbsp;
+    app <span style="color: #66cc66;">=</span> Flask<span style="color: black;">&#40;</span>__name__<span style="color: black;">&#41;</span>
+    &nbsp;
+    <span style="color: #66cc66;">@</span>app.<span style="color: black;">route</span><span style="color: black;">&#40;</span><span style="color: #483d8b;">&quot;/&quot;</span><span style="color: black;">&#41;</span>
+    <span style="color: #ff7700;font-weight:bold;">def</span> hello_world<span style="color: black;">&#40;</span><span style="color: black;">&#41;</span>:
+        <span style="color: #ff7700;font-weight:bold;">return</span> render_template<span style="color: black;">&#40;</span><span style="color: #483d8b;">&quot;index.html&quot;</span><span style="color: black;">&#41;</span>
+    &nbsp;
+    <span style="color: #ff7700;font-weight:bold;">if</span> __name__ <span style="color: #66cc66;">==</span> <span style="color: #483d8b;">'__main__'</span>:
+        app.<span style="color: black;">debug</span> <span style="color: #66cc66;">=</span> <span style="color: #008000;">True</span>
+        app.<span style="color: black;">run</span><span style="color: black;">&#40;</span>host<span style="color: #66cc66;">=</span><span style="color: #483d8b;">'0.0.0.0'</span><span style="color: #66cc66;">,</span> port<span style="color: #66cc66;">=</span><span style="color: #483d8b;">'5000'</span><span style="color: black;">&#41;</span></pre>
+
+  <!-- <div class="full-image text-center" data-aos="zoom-in">
+  <img
+    src="static/images/project/project-detail/interview-process.jpg"
+    class="img-fluid"
+    alt="interview process"
+  />
+</div> -->
+
+  <div class="client-info mt-lg-5 py-lg-5">
+    <h3>
+      I just took index.html from temlate i downloaded and shoved it in
+      render_template function, wrote pathes to static files and everything was working perfetly, except from
+      links. I had to write roots for every individual page i wanted on my
+      website. So i did.
+    </h3>
+    <h3>
+      After I just started to put everything together, you can reed it on the
+      <a href="/project-detail-3"><strong>next page</strong></a>
+    </h3>
+  </div>
+</div>
+{% endblock %}

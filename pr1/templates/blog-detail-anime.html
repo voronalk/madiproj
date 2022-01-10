@@ -1,0 +1,123 @@
+{% extends 'base.html' %} {% block content %}
+<!-- BLOG DETAIL -->
+<section class="project-detail section-padding-half">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center"
+        data-aos="fade-up"
+      >
+        <h4 class="blog-category text-info">Anime</h4>
+
+        <h1>
+          What i watched recently
+        </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="full-image text-center" data-aos="zoom-in">
+  <img
+    src="static/images/blog/blog-header-image.jpg"
+    class="img-fluid"
+    alt="blog header"
+  />
+</div> -->
+
+<!-- BLOG DETAIL -->
+<section class="project-detail">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-9 mx-auto col-md-11 col-12 my-5 pt-3"
+        data-aos="fade-up"
+      >
+      <div class="client-info">
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <img
+            src="static/images/project/project-detail/bleach.png"
+            class="img-fluid"
+            alt="male avatar"
+          />
+          <h2>Bleach</h2>
+        </div>
+        <br>
+      </div>
+        <p>
+          Finally I had strength to start watching Bleach. A first it felt like a regural hero story, but at the soul society ark it changed my mind with incredible fights, now im on ep.170 and it still goes hard. Of course I skiped all the fillers.
+        </p>
+
+        <div class="client-info">
+          <div class="d-flex justify-content-center align-items-center mt-3">
+            <img
+              src="static/images/project/project-detail/mushoku.png"
+              class="img-fluid"
+              alt="male avatar"
+            />
+            <h2>Mushoku Tensei</h2>
+          </div>
+          <br>
+        </div>
+          <p>
+            It feels like I've seen almost all of trash slice of live comedies and isekais, but Mushoku Tensei feels different, such a beautifun animation and a great story keeps you invested thoughout both of seasons. Can't wait for third one.
+          </p>
+          <p>If I have more time I"ll update this page</p>
+
+    <div class="col-lg-8 mx-auto mb-5 pb-5 col-12" data-aos="fade-up">
+      <h3 class="my-3" data-aos="fade-up">Leave a comment</h3>
+
+      <form
+        action="/comment"
+        method="post"
+        class="contact-form"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        role="form"
+      >
+        <div class="row">
+          <input type="hidden" name="page" value="blog_detail_anime">
+          <div class="col-lg-6 col-12">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="col-lg-12 col-12">
+            <textarea
+              class="form-control"
+              rows="6"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div class="col-lg-5 mx-auto col-7">
+            <button
+              type="submit"
+              class="form-control"
+              id="submit-button"
+              name="submit"
+            >
+              Submit Comment
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

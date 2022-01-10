@@ -1,0 +1,151 @@
+{% extends 'base.html' %} {% block content %}
+<!-- BLOG DETAIL -->
+<section class="project-detail section-padding-half">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-9 mx-auto col-md-10 col-12 mt-lg-5 text-center"
+        data-aos="fade-up"
+      >
+        <h4 class="blog-category text-info">Gaming</h4>
+
+        <h1>
+          Games i play
+        </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="full-image text-center" data-aos="zoom-in">
+  <img
+    src="static/images/blog/blog-header-image.jpg"
+    class="img-fluid"
+    alt="blog header"
+  />
+</div> -->
+
+<!-- BLOG DETAIL -->
+<section class="project-detail">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-9 mx-auto col-md-11 col-12 my-5 pt-3"
+        data-aos="fade-up"
+      >
+        <h2 class="mb-3">
+          I sure love playing videogames.
+        </h2>
+
+        <p>
+          Most of my freetime is spent on games, mostly competitive multiplyer ones.
+        </p>
+
+        <p>
+          Sometimes I feel like playing economic strategy games like ANNO series, recentry started to enjoy Northgard.
+          Love RimWorld and Going Medieval, feel really chill while playing them.
+        </p>
+
+        <p>
+          One of my favorite single-player game is FTL. This game has unique gameplay - you control a crew of starship and your goal is to make your way through stars alive.
+        </p>
+
+        <p>
+          The games I play the most:
+        </p>
+
+        <ul class="list-detail py-3">
+          <li>
+            <span>Rocket League ~ 1800 hours</span>
+          </li>
+
+          <li>
+            <span>CS:GO ~ 1500 hours</span>
+          </li>
+
+          <li>
+            <span>Minecraft - only God knows how many</span>
+          </li>
+        </ul>
+
+        <p>
+          Here is a clip from Rocket League, where i land a naughty redirect to oppnents net
+        </p>
+
+        <div class="col-lg-12 col-12">
+          <div
+            class="embed-responsive embed-responsive-16by9 my-5 py-5"
+            data-aos="fade-up"
+          >
+            <iframe
+              class="embed-responsive-item"
+              width="800"
+              height="450"
+              src="https://www.youtube.com/embed/BDzmToHMPjs?controls=0&loop=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-8 mx-auto mb-5 pb-5 col-12" data-aos="fade-up">
+      <h3 class="my-3" data-aos="fade-up">Leave a comment</h3>
+
+      <form
+        action="comment"
+        method="post"
+        class="contact-form"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        role="form"
+      >
+      <input type="hidden" name="page" value="blog_detail_gaming">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="col-lg-12 col-12">
+            <textarea
+              class="form-control"
+              rows="6"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div class="col-lg-5 mx-auto col-7">
+            <button
+              type="submit"
+              class="form-control"
+              id="submit-button"
+              name="submit"
+            >
+              Submit Comment
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
