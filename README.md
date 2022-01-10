@@ -10,9 +10,6 @@ python3 -m venv venv
 
 pip install Flask
 
-export FLASK_APP=hello
-
-flask run
 
 Windows:
 
@@ -22,6 +19,8 @@ venv\Scripts\activate
 
 pip install Flask
 
-export FLASK_APP=hello
+Bash: export FLASK_APP=hello
 
-flask run
+CMD: set FLASK_APP=hello
+
+Powershell: $env:FLASK_APP = "hello"
